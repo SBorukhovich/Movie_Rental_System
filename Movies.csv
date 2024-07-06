@@ -1,0 +1,17 @@
+movie_id,title,genre_id,year,rating
+1,"The Dark Knight",1,2008,9.0
+2,"Inside Out 2",7,2024,7.9
+3,"Star Wars: Episode V - The Empire Strikes Back",1,1980,8.7
+4,Joker,3,2019,8.4
+5,Oppenheimer,3,2023,8.3
+6,"The Fall Guy",2,2024,7.0
+7,Challengers,6,2024,7.3
+8,"Despicable Me",7,2010,7.6
+9,Rocky,6,1976,8.1
+10,"Inside Job",8,2010,8.2
+11,"A Quiet Place",4,2018,7.5
+12,Midsommar,4,2019,7.1
+13,Dune,5,2021,8.0
+14,"The Hangover",2,2009,7.7
+15,"We're the Millers",2,2013,7.0
+16,"The Matrix",1,1999,8.7

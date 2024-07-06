@@ -1,0 +1,8 @@
+employee_id,first_name,last_name,email,phone
+1,Alice,Johnson,alice.johnson@example.com,555-8765
+2,Bob,Smith,bob.smith@example.com,123-555-7890
+3,Charlie,Brown,charlie.brown@example.com,234-555-6781
+4,Diana,Ross,diana.ross@example.com,345-555-5672
+5,Roman,Bor,rom.bor@example.com,456-555-4563
+6,Frank,Miller,frank.miller@example.com,567-555-3454
+7,Grace,Lee,grace.lee@example.com,678-555-2345
