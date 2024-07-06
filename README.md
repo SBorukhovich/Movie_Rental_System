@@ -20,3 +20,6 @@ This project is a database system for managing a movie rental store. It includes
 
 - Requirements: MySQL 
 - Run `schema.sql` and `data.sql` to initialize the database.
+
+## Entity Relationship Diagram
+<img width="761" alt="Screenshot 2024-07-06 at 15 25 31" src="https://github.com/SBorukhovich/Movie_Rental_System/assets/117390927/0c0569fd-297b-49e5-96dd-b9f31ff16882">
