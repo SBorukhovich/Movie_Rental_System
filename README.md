@@ -12,6 +12,9 @@ The objective of the Movie Rental System project is to develop a database for ma
 * Who are the top-performing employees based on the number of rentals processed?
 * What is the store's current inventory status?
 
+## Tableau Dashboard
+<img width="997" alt="Screenshot 2024-07-07 at 19 00 37" src="https://github.com/SBorukhovich/Movie_Rental_System/assets/117390927/30009034-cc0a-4fa2-ac7b-856949db0df1">
+
 ## Database Schema
 
 - `schema.sql`: SQL script to create the database schema.
