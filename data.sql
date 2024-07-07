@@ -1,3 +1,11 @@
+CREATE TABLE Movies (
+  `movie_id` int NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) NOT NULL,
+  `genre_id` int DEFAULT NULL,
+  `year` year DEFAULT NULL,
+  `rating` decimal(2,1) DEFAULT NULL,
+  PRIMARY KEY (`movie_id`)
+); 
 INSERT INTO Movies (title, genre_id, year, rating)VALUES 
  ('The Dark Knight', 1, 2008, 9.0), 
  ('Inside Out 2', 7, 2024, 7.9),
@@ -16,6 +24,14 @@ INSERT INTO Movies (title, genre_id, year, rating)VALUES
  ("We're the Millers", 2, 2013, 7.0),
  ('The Matrix', 1, 1999, 8.7);
  
+ CREATE TABLE Customers (
+  `customer_id` int NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `phone` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`customer_id`)
+)
 INSERT INTO Customers (customer_id, first_name,last_name,email,phone)VALUES 
 (1,'Jane','Smith','jane.smith@example.com','267-555-5678'),
 (2,'Charles','Montgomery','sed@yahoo.net','235-554-5648'),
@@ -58,6 +74,15 @@ INSERT INTO Customers (customer_id, first_name,last_name,email,phone)VALUES
 (39,'Hayden','Sosa','hayden.sosa@example.com','1-743-752-8531'),
 (40,'Aristotle','Forbes','aristotle.forbes@email.com','1-851-725-5010');
 
+CREATE TABLE Employee (
+  `employee_id` int NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `phone` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`)
+) ;
+
 INSERT INTO Employee (first_name, last_name, email, phone) VALUES
 ('Alice','Johnson','alice.johnson@example.com','555-8765'),
 ('Bob','Smith','bob.smith@example.com','123-555-7890'),
@@ -66,6 +91,16 @@ INSERT INTO Employee (first_name, last_name, email, phone) VALUES
 ('Roman','Bor','rom.bor@example.com','456-555-4563'),
 ('Frank','Miller','frank.miller@example.com','567-555-3454'),
 ('Grace','Lee','grace.lee@example.com','678-555-2345');
+
+CREATE TABLE Rentals (
+  `rental_id` int NOT NULL AUTO_INCREMENT,
+  `customer_id` int DEFAULT NULL,
+  `movie_id` int DEFAULT NULL,
+  `rental_date` date DEFAULT NULL,
+  `return_date` date DEFAULT NULL,
+  `employee_id` int DEFAULT NULL,
+  PRIMARY KEY (`rental_id`)
+); 
 
 INSERT INTO Rentals (customer_id, movie_id, rental_date, return_date, staff_id) VALUES 
 (20,3,'2023-11-24','2023-12-07',1),
@@ -95,6 +130,11 @@ INSERT INTO Rentals (customer_id, movie_id, rental_date, return_date, staff_id) 
 (17,13,'2023-06-06','2023-06-12',1),
 (8,3,'2024-07-01','2024-07-11',5);
 
+CREATE TABLE Genres (
+  `genre_id` int NOT NULL AUTO_INCREMENT,
+  `genre_name` varchar(50) NOT NULL,
+  PRIMARY KEY (`genre_id`)
+) ;
 INSERT INTO Genres (genre_name) VALUES 
 ('Action'), 
 ('Comedy'), 
